@@ -10,10 +10,14 @@
 @import 'base/_utilities';
 
 // components
+@import 'components/_button';
 @import 'components/_carousel';
+@import 'components/_registration';
 
 // layouts
 @import 'layouts/_footer';
+@import 'layouts/_forms';
+@import 'layouts/_grid';
 @import 'layouts/_header';
 @import 'layouts/_navigation';
 

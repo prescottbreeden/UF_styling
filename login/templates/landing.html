@@ -42,37 +42,18 @@
 		<input type="checkbox" class="navigation__checkbox" checked id="navi-toggle" />
 
 		<!-- shadowbox hiding underneath the toggle button -->
-		<div class="navigation__background">&nbsp;
+		<div class="navigation__background">
 
 		<!-- UI nav toggle button -->
 		<label for="navi-toggle" class="navigation__button">
-			<span class="navigation__icon">&nbsp;</span>
+			<span class="navigation__icon"></span>
 			<div class="btn-push">
-				Menu
+				<!-- Menu -->
 			</div>
 		</label>
 		
-			<div class="navigation__background--q">
-				<div class="navigation__background--q-1">
-					quadrant 1
-				</div>
-				<div class="navigation__background--q-2">
-					quadrant 2
-				</div>
-			</div>
-			<div class="navigation__background--q">
-				<div class="navigation__background--q-3">
-					quadrant 3
-				</div>
-				<div class="navigation__background--q-4">
-					quadrant 4
-				</div>
-			</div>
-		</div>
-
-
 		<!-- navigation menu -->
-		<nav class="navigation__nav">
+		<!-- <nav class="navigation__nav">
 
 			<div class="navigation__list">
 
@@ -81,20 +62,13 @@
 				</div>
 
 				<div class="navigation__item">
-					<a href="#" class="navigation__link">Account</a>
-				</div>
-
-				<div class="navigation__item">
 					<a href="#" class="navigation__link">Stats</a>
 				</div>	
 
 			</div>
-		</nav>
+		</nav> -->
 
 	</div>
-
-
-
 
 	<!-- <section class="carousel">
 		
@@ -103,6 +77,131 @@
 		</div>
 
 	</section> -->
+<div class="forms">
+	<div class="registration">
+	<h2>Register</h2>
+		<div class="row">
+			<form action="#" method="post" class="form">
+				<!-- {% url 'register' %} -->
+				<!-- {% csrf_token %} -->
+
+				<div class="form__group">
+					<input 
+						id="alias"
+						name="alias" 
+						placeholder="Alias" 
+						autoComplete="off"
+						required
+						class="form__input"
+						type="text" 
+						>
+					<label 
+						for="alias"
+						class="form__label">
+						Alias
+					</label>
+				</div>
+
+				<div class="form__group">
+					<input 
+						id="email"
+						name="email" 
+						placeholder="Email"  
+						autoComplete="off"
+						required
+						class="form__input"
+						type="text" 
+						>
+					<label 
+						for="email"
+						class="form__label">
+						Email
+					</label>
+				</div>
+
+				<div class="form__group">
+					<input 
+						id="password"
+						name="password" 
+						placeholder="Password" 
+						autoComplete="off"
+						required
+						class="form__input"
+						type="password">
+					<label 
+						for="password"
+						class="form__label">
+						Password
+					</label>
+				</div>
+
+				<div class="form__group">
+					<input 
+						id="cpassword"
+						name="cpassword" 
+						placeholder="Confirm Password" 
+						autoComplete="off"
+						required
+						class="form__input"
+						type="password">
+					<label 
+						for="cpassword"
+						class="form__label">
+						Confirm Password
+					</label>
+				</div>
+				<button class="btn btn--blue">Register &rarr;</button>
+			</form> 
+		</div>
+	</div>
+
+	<!-- {{request.session.status}} -->
+	<div class="login">
+		<div class="row">
+			<div class="book">
+				<div class="book__form">
+					<div class="u-margin-bottom-medium">
+						<h2 class="heading-secondary">Login</h2>
+					</div>
+					<form action="/" class="form">
+						<div class="form__group">
+							<input 
+								type="text" 
+								class="form__input" 
+								placeholder="alias" 
+								id="alias"
+								autoComplete="off"
+								required/>
+							<label 
+								for="alias" 
+								class="form__label">
+								Alias
+							</label>
+						</div>
+						<div class="form__group">
+							<input 
+								type="email" 
+								class="form__input" 
+								placeholder="email"
+								id="email"
+								autoComplete="off"
+								required />
+							<label 
+								for="email" 
+								class="form__label">Email address
+							</label>
+						</div>
+						<div class="form__group">
+							<button class="btn btn--blue">Login &rarr;</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 
 
 
