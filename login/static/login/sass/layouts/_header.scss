@@ -1,0 +1,63 @@
+.header {
+    font-size: 2rem;
+    background-color: $color-grey-dark;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $default-border-radius;
+    
+    &__logo-box {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            &__background {
+                
+                &-bottom {
+                    padding: 0 1rem;
+                    background-color: $color-primary-light;
+                    clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+                }
+
+                &-middle {
+                    padding: 0 1rem;
+                    background-color: $color-primary-medium;
+                    clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+                }
+
+                &-top {
+                    padding: 0 3rem;
+                    background-color: $color-primary;
+                    clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+                }
+            }
+
+            &__text {
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1rem;
+            }
+        }
+    }
+
+    &__userbox {
+        width: 20%;
+        margin-right: 3rem;
+        display: flex;
+        justify-content: space-around;
+        font-size: $default-font-size;
+
+        &-icon * {
+            display: inline-block;
+            color: $color-white;
+
+        }
+
+        &-action * {
+            display: inline-block;
+        }
+    }
+
+}

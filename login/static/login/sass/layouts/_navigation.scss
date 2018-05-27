@@ -1,0 +1,54 @@
+.navigation {
+    
+
+    &__nav {
+
+    }
+
+    
+    &__list{
+        display: flex;
+        justify-content: space-evenly;       
+    }
+
+    &__item{
+        perspective: 50rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: $color-blue-grey; 
+
+        }
+        
+        &-details {
+            text-align: center;
+            opacity: 1;
+            transform-origin: top;
+            transform: rotateX(-180deg);
+            color: $color-white;
+            background-color: blue;
+            backface-visibility: hidden;
+
+            
+        }
+
+        &:hover ~ &-details{
+            opacity: 1;
+            transform: rotateX(0deg);
+            transition-duration: .5s;
+            
+            
+        }
+
+    }
+}

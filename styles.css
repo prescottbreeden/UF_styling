@@ -1,0 +1,86 @@
+@keyframes grow {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.5); } }
+
+@keyframes slide_up {
+  0% {
+    transform: translateY(100px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+body {
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem; }
+
+.carousel {
+  width: 100%;
+  background-color: pink; }
+  .carousel__image-container {
+    background-image: linear-gradient(left top, rgba(74, 133, 173, 0.3), rgba(25, 65, 92, 0.3)), url("../img/brady-sack.jpg"); }
+  .carousel__image-image-1 {
+    width: 100%; }
+
+.header {
+  font-size: 2rem;
+  background-color: #333;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo-box {
+    width: 50%;
+    display: flex;
+    justify-content: center; }
+    .header__logo-box .logo__background-bottom {
+      padding: 0 1rem;
+      background-color: #4A85AD;
+      clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%); }
+    .header__logo-box .logo__background-middle {
+      padding: 0 1rem;
+      background-color: #396A8B;
+      clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%); }
+    .header__logo-box .logo__background-top {
+      padding: 0 3rem;
+      background-color: #19415C;
+      clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%); }
+    .header__logo-box .logo__text {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1rem; }
+  .header__userbox {
+    width: 20%;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem; }
+    .header__userbox-icon * {
+      display: inline-block;
+      color: #f2f2f2; }
+    .header__userbox-action * {
+      display: inline-block; }

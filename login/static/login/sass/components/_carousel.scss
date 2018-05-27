@@ -1,0 +1,23 @@
+.carousel {
+    width: 100%;
+
+    &__image {
+
+        &-container {
+            height: 70rem;
+            background-image: linear-gradient(
+                to left top, 
+                rgba($color-primary-light, .3),
+                rgba($color-primary, .3)),
+                url('./brady-sack.jpg');
+            background-size: cover;
+            background-position: top;
+        }
+
+        &-image-1 {
+            width: 100%;
+
+        }
+    }
+
+}
