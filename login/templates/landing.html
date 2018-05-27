@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../static/login/styles.css" media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
-	<section class="header u-margin-bottom-small">
+	<section class="header">
 
 		<div class="header__logo-box">
 			<div class="logo__background-bottom">
@@ -38,35 +38,54 @@
 
 	<div class="navigation">
 
+		<!-- checkbox hack for nav toggle -->
+		<input type="checkbox" class="navigation__checkbox" checked id="navi-toggle" />
+
+		<!-- shadowbox hiding underneath the toggle button -->
+		<div class="navigation__background">&nbsp;
+
+		<!-- UI nav toggle button -->
+		<label for="navi-toggle" class="navigation__button">
+			<span class="navigation__icon">&nbsp;</span>
+			<div class="btn-push">
+				Menu
+			</div>
+		</label>
+		
+			<div class="navigation__background--q">
+				<div class="navigation__background--q-1">
+					quadrant 1
+				</div>
+				<div class="navigation__background--q-2">
+					quadrant 2
+				</div>
+			</div>
+			<div class="navigation__background--q">
+				<div class="navigation__background--q-3">
+					quadrant 3
+				</div>
+				<div class="navigation__background--q-4">
+					quadrant 4
+				</div>
+			</div>
+		</div>
+
+
+		<!-- navigation menu -->
 		<nav class="navigation__nav">
+
 			<div class="navigation__list">
 
 				<div class="navigation__item">
-					<a href="#" class="navigation__link">Home</a>
-					<div class="navigation__link-details">
-						home link
-					</div>
+					<a href="#" class="navigation__link">Quiz</a>
 				</div>
 
 				<div class="navigation__item">
-					<a href="#" class="navigation__link">Quizzes</a>
-					<div class="navigation__link-details">
-						quiz link
-					</div>
+					<a href="#" class="navigation__link">Account</a>
 				</div>
 
 				<div class="navigation__item">
-					<a href="#" class="navigation__link">Quiz Stats</a>
-					<div class="navigation__link-details">
-						stats link
-					</div>
-				</div>
-
-				<div class="navigation__item">
-					<a href="#" class="navigation__link">Your Account</a>
-					<div class="navigation__link-details">
-						account link
-					</div>
+					<a href="#" class="navigation__link">Stats</a>
 				</div>	
 
 			</div>
