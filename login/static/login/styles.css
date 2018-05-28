@@ -1,3 +1,13 @@
+@keyframes slide-left {
+  100% {
+    transform: translateX(-100%); } }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
 :root {
   --color-primary: #19415C;
   --color-primary-light: #4A85AD;
@@ -65,9 +75,25 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   width: 100%;
   padding: 3rem;
-  font-family: 'Source Sans Pro';
-  font-size: 2rem;
-  font-weight: 200; }
+  display: flex;
+  backface-visibility: hidden; }
+  .welcome__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch; }
+  .welcome__text {
+    display: inline-block;
+    flex: 1 0 25%;
+    font-family: 'Source Sans Pro';
+    font-size: 2rem;
+    font-weight: 200; }
+
+.slide-left {
+  animation: slide-left 1s ease-out .2s 1 forwards; }
+
+.slide-right {
+  animation: slide-right 1s ease-out .2s 1 forwards; }
 
 .form {
   padding: 3rem; }
@@ -105,13 +131,28 @@ body {
   padding: 2rem 3rem;
   border-radius: 200px;
   background-color: var(--color-primary);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   font-family: inherit;
   font-size: 2.5rem;
   font-weight: 300;
   color: var(--color-grey-light);
   border: none;
   outline: none; }
+  .btn__close {
+    padding: 2rem 2rem;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    color: var(--color-grey-light);
+    background: var(--color-grey-dark-3); }
+    .btn__close:hover {
+      color: red;
+      cursor: pointer; }
+  .btn__info {
+    background-color: var(--color-primary-light);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
   .btn__form {
     width: 100%; }
   .btn:hover {
@@ -121,6 +162,27 @@ body {
   .btn:active {
     transform: translateY(2px);
     box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.5); }
+
+.shadow {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  transition: all .2s; }
+
+.footer {
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 13rem;
+  background-color: var(--color-grey-dark-3); }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: var(--color-grey-light); }
+    .footer__link:link:hover, .footer__link:visited:hover {
+      color: var(--color-green); }
+  .footer__info p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem; }
 
 .container {
   border-radius: 3px;
