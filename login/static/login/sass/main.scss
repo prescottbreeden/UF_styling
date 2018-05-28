@@ -1,25 +1,10 @@
-// abstracts
-@import 'abstracts/_functions';
-@import 'abstracts/_mixins';
-@import 'abstracts/_variables';
 
-// base
-@import 'base/_animations';
-@import 'base/_base';
-@import 'base/_typography';
-@import 'base/_utilities';
-
-// components
-@import 'components/_button';
-@import 'components/_carousel';
-@import 'components/_registration';
-
-// layouts
-@import 'layouts/_footer';
-@import 'layouts/_forms';
-@import 'layouts/_grid';
-@import 'layouts/_header';
-@import 'layouts/_navigation';
+@import '_base';
+@import '_components';
+@import '_layout';
+@import '_mixins';
+@import '_typescript';
+@import '_utilities';
 
 //pages
 @import 'pages/_account';

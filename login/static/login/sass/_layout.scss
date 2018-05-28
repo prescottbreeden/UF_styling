@@ -1,0 +1,164 @@
+.container {
+    border-radius: 3px;
+    background-color: var(--color-blue-grey);
+    // background-image: url('./brady-sack.jpg');
+
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 2rem;
+    background-color: var(--color-grey-dark);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    border-radius: 3px;
+    border-bottom: 3px solid var(--color-primary-light);
+
+    & > * {
+        // background-color: pink;
+    }
+    
+    &__logo-box {
+        width: 50%;
+        // color: pink;
+    }
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    
+    // height: 100%;
+
+
+
+    &__userbox {
+        width: 50%;
+        margin: 0 3rem;
+        display: flex;
+        justify-content: flex-end;
+        // border: 2px dashed purple;
+        
+
+        &-box {
+            display: flex;
+            flex-direction: row;
+            // border: 2px dashed red;
+            height: 100%;
+            padding: 0 3rem;
+            align-items: center;
+            position: relative;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+        }
+
+        &-icon {
+            position: absolute;
+            top: 1.75rem;
+            right: 0;
+            height: 2.25rem;
+            width: 2.25rem;
+            fill: var(--color-white);
+            // background-color: orangered;
+
+        }
+
+        &-action {
+            position: absolute;
+            top: 1.95rem;
+            right: 0rem;
+            margin-left: 3rem;
+            height: 2.25rem;
+            width: 2.25rem;
+            fill: var(--color-white);
+            // background-color: greenyellow;
+        }
+    }
+}
+
+.logo {
+    &__background {
+        
+        &-bottom {
+            padding: 0 1rem;
+            background-color: var(--color-primary-light);
+            clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+            flex: 0 0 95%;
+        }
+
+        &-middle {
+            padding: 0 1rem;
+            background-color: var(--color-primary-medium);
+            clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+        }
+
+        &-top {
+            padding: 0 3rem;
+            background-color: var(--color-primary);
+            clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+        }
+    }
+
+    &__text {
+        text-align: center;
+        text-transform: uppercase;
+        // letter-spacing: 1rem;
+        font-weight: 300;
+    }
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    
+    &__box {
+        flex: 1 0 25%;
+        // clip-path: polygon(13% 0, 100% 0, 87% 100%, 0% 100%);
+        perspective: 100rem;
+    }
+
+    &__item {
+        background-color: var(--color-primary);
+        padding: 2rem 4rem;
+        text-transform: uppercase;
+        // flex: 1 0 25%;
+        cursor: pointer;
+        height: 100%;
+        // transition: all .3s;
+
+        &:hover {
+            background-color: var(--color-primary-light);
+            color: black;
+        }
+        &:hover + .nav__details {
+            transform: rotateX(0);
+            opacity: 1;
+        }
+
+    }
+
+    &__details {
+        transform-origin: top;
+        transform: rotateX(-90deg);
+        opacity: 0;
+        background-color: var(--color-primary-light);
+        transition: all .3s;
+        color: #fff;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    &__item > * {
+       text-decoration: none;
+       color: #fff;
+       
+
+   }
+}
